@@ -1,0 +1,486 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 19px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'IBM Plex Mono', monospace;
+    display: none;
+    font-weight: normal;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    font-family: 'IBM Plex Mono', monospace;
+    display: none;
+    font-weight: normal;
+}
+
+.line-1{
+    position: fixed;
+    top: 0%;
+    left: -800px;
+    white-space: nowrap;
+}
+
+.line-2{
+    position: fixed;
+    bottom: 0%;
+    right: -800px;
+    white-space: nowrap;
+    transform: rotate(180deg);
+}
+
+p {
+    width: 600px;
+    margin: 30vh auto;
+}
+
+#border_svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    /* keeps svg from interfering with any other interaction */
+}
+
+#textPath {
+    font-family: 'IBM Plex Mono', monospace;
+    fill: rgb(255, 255, 255);
+}
+
+.other-text {
+    fill: rgb(255, 255, 255);
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration:underline;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+a:hover {
+    opacity: 0.5;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+    pointer-events: none; /* keeps overlay from interfering with any other interaction */
+    z-index: 9999; /* keeps overlay on top of other content */
+}
+
+/* SA_1 */
+.image16-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+ 
+}
+.image16-container img {
+    position: absolute;
+    max-width: 15%;
+}
+
+/* SA_2 */
+.image17-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image17-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 17%; /* moves to right */
+}
+
+/* SA_3 */
+.image18-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image18-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 34%; /* moves to right */
+}
+
+/* SA_4 */
+.image19-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image19-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 51%; /* moves to right */
+}
+
+/* SA_5 */
+.image20-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image20-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 68%; /* moves to right */
+}
+
+.image16-container, .image17-container, 
+.image18-container, .image19-container,
+.image20-container {
+    top: 145em;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    max-width: 50em;
+    transition: transform 0.3s ease;
+}
+.image16-container:hover, .image17-container:hover, 
+.image18-container:hover, .image19-container:hover,
+.image20-container:hover {
+    top: 145em;
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+
+/* RK_1 */
+.image11-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+ 
+}
+.image11-container img {
+    position: absolute;
+    max-width: 15%;
+}
+
+/* RK_2 */
+.image12-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image12-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 17%; /* moves to right */
+}
+
+/* RK_3 */
+.image13-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image13-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 34%; /* moves to right */
+}
+
+/* RK_4 */
+.image14-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image14-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 51%; /* moves to right */
+}
+
+/* RK_5 */
+.image15-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image15-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 68%; /* moves to right */
+}
+
+.image11-container, .image12-container, 
+.image13-container, .image14-container,
+.image15-container {
+    top: 107em;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    max-width: 50em;
+    transition: transform 0.3s ease;
+}
+.image11-container:hover, .image12-container:hover, 
+.image13-container:hover, .image14-container:hover,
+.image15-container:hover {
+    top: 107em;
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+/* AK_1 */
+.image1-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+ 
+}
+.image1-container img {
+    position: absolute;
+    max-width: 15%;
+}
+
+/* AK_2 */
+.image2-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image2-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 17%; /* moves to right */
+}
+
+/* AK_3 */
+.image3-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image3-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 34%; /* moves to right */
+}
+
+/* AK_4 */
+.image4-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image4-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 51%; /* moves to right */
+}
+
+/* AK_5 */
+.image5-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image5-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 68%; /* moves to right */
+}
+
+.image1-container, .image2-container, 
+.image3-container, .image4-container,
+.image5-container {
+    top: 26.6em;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    max-width: 50em;
+    transition: transform 0.3s ease;
+}
+.image1-container:hover, .image2-container:hover, 
+.image3-container:hover, .image4-container:hover,
+.image5-container:hover {
+    top: 26.6em;
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+/* EK_1 */
+.image6-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+ 
+}
+.image6-container img {
+    position: absolute;
+    max-width: 15%;
+}
+
+/* EK_2 */
+.image7-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image7-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 17%; /* moves to right */
+}
+
+/* EK_3 */
+.image8-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image8-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 34%; /* moves to right */
+}
+
+/* EK_4 */
+.image9-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image9-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 51%; /* moves to right */
+}
+
+/* EK_5 */
+.image10-container {
+    width: 600px;
+    margin: 30vh auto;
+    position: relative;
+}
+.image10-container img {
+    position: absolute;
+    max-width: 15%;
+    left: 68%; /* moves to right */
+}
+
+.image6-container, .image7-container, 
+.image8-container, .image9-container,
+.image10-container {
+    top: 70em;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    max-width: 50em;
+    transition: transform 0.3s ease;
+}
+.image6-container:hover, .image7-container:hover, 
+.image8-container:hover, .image9-container:hover,
+.image10-container:hover {
+    top: 70em;
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+
+
+
+
+/* when resized */
+
+
+@media (max-width:600px){
+
+    body {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 12px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+
+    p {
+        width: 360px;
+    }
+
+    #textPath, .other-text {
+        display: none;
+    }
+
+    h1 {
+        display: block;
+    }
+    h2 {
+        display: block;
+    }
+    .image1-container, .image2-container, 
+    .image3-container, .image4-container, 
+    .image5-container {
+        max-width: 30em;
+        top: 27.5em;
+        opacity: 1;
+    }
+    .image1-container:hover, .image2-container:hover, 
+    .image3-container:hover, .image4-container:hover, 
+    .image5-container:hover {
+        top: 27.5em;
+        transform: none;
+    }
+
+    .image6-container, .image7-container, 
+    .image8-container, .image9-container, 
+    .image10-container {
+        max-width: 30em;
+        top: 80em;
+        opacity: 1;
+    }
+    .image6-container:hover, .image7-container:hover, 
+    .image8-container:hover, .image9-container:hover, 
+    .image10-container:hover {
+        top: 80em;
+        transform: none;
+    }
+
+    .image11-container, .image12-container, 
+    .image13-container, .image14-container, 
+    .image15-container {
+        max-width: 30em;
+        top: 127em;
+        opacity: 1;
+    }
+    .image11-container:hover, .image12-container:hover, 
+    .image13-container:hover, .image14-container:hover, 
+    .image15-container:hover {
+        top: 127em;
+        transform: none;
+    }
+
+    .image16-container, .image17-container, 
+    .image18-container, .image19-container, 
+    .image20-container {
+        max-width: 30em;
+        top: 172.5em;
+        opacity: 1;
+    }
+    .image16-container:hover, .image17-container:hover, 
+    .image18-container:hover, .image19-container:hover, 
+    .image20-container:hover {
+        top: 172.5em;
+        transform: none;
+    }
+
+}
